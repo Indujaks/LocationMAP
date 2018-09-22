@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:id="@+id/mapImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textView"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="150dp"
+        android:hint="X cord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/textView2"
+        android:inputType="numberDecimal"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="200dp"
+        android:hint="Z cord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Go" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:maxImageSize="48dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/compass_icon"
+        app:backgroundTint="@android:color/background_light"
+        app:fabSize="normal" />
+
+</RelativeLayout>
