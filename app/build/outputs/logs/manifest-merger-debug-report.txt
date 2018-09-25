@@ -1,0 +1,184 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:design:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/bb6fd4e8f6585b92a59f01a9a4c3d4a7/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/591c1ee704883698b96f5233e1f89865/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/atom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1a2abe8a4e579ef9b64318a31a35066e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4d32840236d0009a5e0cdbd9ef7608c9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1dd136f06ac80ebd184ee77422ddad74/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/f0b136deefb241fc9495ae2b60186ca8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d391b53888b07503f2efdab4af8a5c28/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/5c073affcced3dc657c5d752447255a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/f980b40fd50f01219490ec0de3bc4993/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/27f8cf4f0c8c8d2694fd6b6da5833e78/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/200ca5ef18ee645a71eae4c5e73b492c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3210f152cb79f1f8d01dfeae3b871ba3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e1e14ec4fe0fe4e3ce4b2f60aaca56e8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/ceb1ce3dc51d38a7d5ea2ae0489a2dec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/93bc1e740f3ca05df2605cc872f7280d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/27d1ddd123db9add5a67ba760b2e3755/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/bea7013c4227752981c2e4ac2681bace/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/8d52329f698f79f6892aff3e6e3ef3c5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bef3de3137e6c0b2ef01a167ec3aa002/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bbab8990b713b2512acfe17bea9f8028/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d333c7f68944f27465f5b439b8910855/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/173c9361b4bc0ea1156ceca4281de007/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0533ab9ee56875df43e0803a60e4f7bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/4989713b1d01acc6f1ca8fe4876cd5f6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/182c600ba51fa3dbc46e0ae0f5a59efc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/2b4fb5e87f2b57dd26c87684d8577967/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/41a2f89c8b5609c0b1c536a1e1fe55c8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6febd49dba56199e0eb9e6d99c0e3df4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6ec0edf6c83f9699572acf21037d64c3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7f8e56a21ddfd35dbe25be867946bd4f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a92e3d5bce733deadf01282ca5d4990b/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:6:22-78
+application
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [com.android.support:design:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/bb6fd4e8f6585b92a59f01a9a4c3d4a7/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/bb6fd4e8f6585b92a59f01a9a4c3d4a7/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/atom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1a2abe8a4e579ef9b64318a31a35066e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/atom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1a2abe8a4e579ef9b64318a31a35066e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bef3de3137e6c0b2ef01a167ec3aa002/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bef3de3137e6c0b2ef01a167ec3aa002/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bbab8990b713b2512acfe17bea9f8028/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bbab8990b713b2512acfe17bea9f8028/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bef3de3137e6c0b2ef01a167ec3aa002/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.apeks.atom.justamap.MainActivity
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:19:27-74
+activity#com.apeks.atom.justamap.Settings
+ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:22:9-25:68
+	android:label
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:24:13-60
+	android:theme
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml:23:13-37
+uses-sdk
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/bb6fd4e8f6585b92a59f01a9a4c3d4a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/bb6fd4e8f6585b92a59f01a9a4c3d4a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/591c1ee704883698b96f5233e1f89865/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/591c1ee704883698b96f5233e1f89865/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/atom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1a2abe8a4e579ef9b64318a31a35066e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/atom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1a2abe8a4e579ef9b64318a31a35066e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4d32840236d0009a5e0cdbd9ef7608c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4d32840236d0009a5e0cdbd9ef7608c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1dd136f06ac80ebd184ee77422ddad74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1dd136f06ac80ebd184ee77422ddad74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/f0b136deefb241fc9495ae2b60186ca8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/f0b136deefb241fc9495ae2b60186ca8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d391b53888b07503f2efdab4af8a5c28/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d391b53888b07503f2efdab4af8a5c28/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/5c073affcced3dc657c5d752447255a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/5c073affcced3dc657c5d752447255a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/f980b40fd50f01219490ec0de3bc4993/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/f980b40fd50f01219490ec0de3bc4993/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/27f8cf4f0c8c8d2694fd6b6da5833e78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/27f8cf4f0c8c8d2694fd6b6da5833e78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/200ca5ef18ee645a71eae4c5e73b492c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/200ca5ef18ee645a71eae4c5e73b492c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3210f152cb79f1f8d01dfeae3b871ba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3210f152cb79f1f8d01dfeae3b871ba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e1e14ec4fe0fe4e3ce4b2f60aaca56e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e1e14ec4fe0fe4e3ce4b2f60aaca56e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/ceb1ce3dc51d38a7d5ea2ae0489a2dec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/ceb1ce3dc51d38a7d5ea2ae0489a2dec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/93bc1e740f3ca05df2605cc872f7280d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/93bc1e740f3ca05df2605cc872f7280d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/27d1ddd123db9add5a67ba760b2e3755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/27d1ddd123db9add5a67ba760b2e3755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/bea7013c4227752981c2e4ac2681bace/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/bea7013c4227752981c2e4ac2681bace/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/8d52329f698f79f6892aff3e6e3ef3c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/8d52329f698f79f6892aff3e6e3ef3c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bef3de3137e6c0b2ef01a167ec3aa002/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bef3de3137e6c0b2ef01a167ec3aa002/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bbab8990b713b2512acfe17bea9f8028/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bbab8990b713b2512acfe17bea9f8028/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d333c7f68944f27465f5b439b8910855/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d333c7f68944f27465f5b439b8910855/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/173c9361b4bc0ea1156ceca4281de007/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/173c9361b4bc0ea1156ceca4281de007/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0533ab9ee56875df43e0803a60e4f7bf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0533ab9ee56875df43e0803a60e4f7bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/4989713b1d01acc6f1ca8fe4876cd5f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/4989713b1d01acc6f1ca8fe4876cd5f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/182c600ba51fa3dbc46e0ae0f5a59efc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/182c600ba51fa3dbc46e0ae0f5a59efc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/2b4fb5e87f2b57dd26c87684d8577967/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/2b4fb5e87f2b57dd26c87684d8577967/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/41a2f89c8b5609c0b1c536a1e1fe55c8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/41a2f89c8b5609c0b1c536a1e1fe55c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6febd49dba56199e0eb9e6d99c0e3df4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/atom/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6febd49dba56199e0eb9e6d99c0e3df4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6ec0edf6c83f9699572acf21037d64c3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6ec0edf6c83f9699572acf21037d64c3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7f8e56a21ddfd35dbe25be867946bd4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7f8e56a21ddfd35dbe25be867946bd4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a92e3d5bce733deadf01282ca5d4990b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/atom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a92e3d5bce733deadf01282ca5d4990b/AndroidManifest.xml:20:5-44
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		ADDED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/src/main/AndroidManifest.xml

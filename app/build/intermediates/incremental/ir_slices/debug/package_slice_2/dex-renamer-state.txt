@@ -1,0 +1,4 @@
+#Mon Sep 24 17:05:16 IST 2018
+base.0=/home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex

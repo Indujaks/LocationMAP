@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/atom/CYANOGEN/Srjana2018/application/JustAMap/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/home/atom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/591c1ee704883698b96f5233e1f89865/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

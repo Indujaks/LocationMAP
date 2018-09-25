@@ -1,5 +1,6 @@
 package com.apeks.atom.justamap;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     Canvas canvas;
     private static float X0, Y0 ,X1, Y1, X2, Y2, left, top;
     private int startX, startY, endX1, endY1, endX2, endY2;
+    public float k0_x = 0.120f, k0_y = 0.910f, k1_x = 0.85f, k2_y = 0.030f;
     private static int sensorCount = 0;
     EditText x ,z;
     Button go;
@@ -73,24 +75,27 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         });
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        /*
+
         int height = displayMetrics.heightPixels;
         int width = displayMetrics.widthPixels;
-        */
+
+        Log.e("KALA:","Display height="+height);
+        Log.e("KALA:","Display width="+width);
         x = findViewById(R.id.textView);
         z = findViewById(R.id.textView2);
         go = findViewById(R.id.button);
 
         mapView = findViewById(R.id.mapImageView);
         mapImage = BitmapFactory.decodeResource(getResources(), R.drawable.newmap);
-        X0 = mapImage.getWidth() * 0.120f;
-        Y0 = mapImage.getHeight() * 0.910f;
 
-        X1 = mapImage.getWidth() * 0.85f;
-        Y1 = mapImage.getHeight() * 0.890f;
+        X0 = mapImage.getWidth() * k0_x;
+        Y0 = mapImage.getHeight() * k0_y;
 
-        X2 = mapImage.getWidth() * 0.120f;
-        Y2 = mapImage.getHeight() * 0.030f;
+        X1 = mapImage.getWidth() * k1_x;
+        Y1 = mapImage.getHeight() * k0_y;
+
+        X2 = mapImage.getWidth() * k0_x;
+        Y2 = mapImage.getHeight() * k2_y;
 
         startX = Math.round(X0);
         startY = Math.round(Y0);
@@ -108,7 +113,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         canvas.drawBitmap(mapImage, new Matrix(), null);
         float deltaX = Math.abs(50 * (endX1 - startX) / mapEndX);
         float deltaY = Math.abs(400 * (startY - endY2) / mapEndY);
-        //float temp =  300 * 2685 / 600;
 
         canvas.drawBitmap(blueDot, startX + deltaX, startY - deltaY, new Paint()); // or try (endY2 + deltaY)
         //canvas.drawBitmap(blueDot, endX, endY, new Paint());
@@ -120,9 +124,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Log.e("kala:","Point diff = "+Integer.toString(endY2 - startY));
 
         go.setOnClickListener(view -> {
-            float x_c = Float.valueOf(x.getText().toString());
-            float y_c = Float.valueOf(z.getText().toString());
-            drawOnMap(x_c, y_c);
+            String x_c = x.getText().toString();
+            String y_c = z.getText().toString();
+
+            if (x_c.isEmpty() || y_c.isEmpty()) {
+                Toast.makeText(getApplicationContext(), "Entering Settings Layout", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(MainActivity.this, Settings.class));
+            } else
+                drawOnMap(Float.valueOf(x_c), Float.valueOf(y_c));
         });
     }
     public static Bitmap rotate(Bitmap b, int degrees) {
@@ -143,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         return b;
     }
+
     public void drawOnMap(float x, float y) {
         float deltaX = Math.abs(x * (endX1 - startX) / mapEndX);
         float deltaY = Math.abs(y * (startY - endY2) / mapEndY);
