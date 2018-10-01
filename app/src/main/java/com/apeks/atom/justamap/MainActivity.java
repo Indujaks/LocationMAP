@@ -11,8 +11,11 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -24,25 +27,43 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener {
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.nearby.Nearby;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.io.FileInputStream;
+
+public class MainActivity extends AppCompatActivity implements SensorEventListener ,GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener {
 
     private ImageView mapView;
     private Bitmap mapImage, blueDot, positionBitmap;
     Canvas canvas;
     private static float X0, Y0 ,X1, Y1, X2, Y2, left, top;
     private int startX, startY, endX1, endY1, endX2, endY2;
-    public float k0_x = 0.120f, k0_y = 0.910f, k1_x = 0.85f, k2_y = 0.030f;
+    public float k0_x = 0.105f, k0_y = 0.86f, k1_x = 0.90f, k2_y = 0.070f;
     private static int sensorCount = 0;
-    EditText x ,z;
+    EditText x ,z,coortv;
+    TextView coordinates_tv;
     Button go;
     DisplayMetrics displayMetrics = new DisplayMetrics();
     FloatingActionButton fab;
+    private  DatabaseReference rootRef;
+    private static final String KEY_ROOT_DIR = "shared_anchor_codelab_root_helloAR_app";
 
-    final int mapEndX = 300;
-    final int mapEndY = 600;
-
+    final int mapEndX = 450;
+    final int mapEndY = 850;
+    private GoogleApiClient mGoogleApiClient;
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
     private Sensor mMagnetometer;
@@ -53,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private float[] mR = new float[9];
     private float[] mOrientation = new float[3];
     private float mCurrentDegree = 0f;
-
+    private StorageManager storageManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,9 +105,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         x = findViewById(R.id.textView);
         z = findViewById(R.id.textView2);
         go = findViewById(R.id.button);
-
+        coordinates_tv =findViewById(R.id.textView3);
         mapView = findViewById(R.id.mapImageView);
-        mapImage = BitmapFactory.decodeResource(getResources(), R.drawable.newmap);
+        mapImage = BitmapFactory.decodeResource(getResources(), R.drawable.map);
 
         X0 = mapImage.getWidth() * k0_x;
         Y0 = mapImage.getHeight() * k0_y;
@@ -107,15 +128,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         endY2 = Math.round(Y2);
 
         blueDot = BitmapFactory.decodeResource(getResources(), R.drawable.direction_marker);
-        blueDot = Bitmap.createScaledBitmap(blueDot, 125,125, false);
+        blueDot = Bitmap.createScaledBitmap(blueDot, 90,90, false);
         positionBitmap = Bitmap.createBitmap(mapImage.getWidth(),mapImage.getHeight(), mapImage.getConfig());
         canvas = new Canvas(positionBitmap);
         canvas.drawBitmap(mapImage, new Matrix(), null);
-        float deltaX = Math.abs(50 * (endX1 - startX) / mapEndX);
+        float deltaX = Math.abs(150 * (endX1 - startX) / mapEndX);
         float deltaY = Math.abs(400 * (startY - endY2) / mapEndY);
 
-        canvas.drawBitmap(blueDot, startX + deltaX, startY - deltaY, new Paint()); // or try (endY2 + deltaY)
-        //canvas.drawBitmap(blueDot, endX, endY, new Paint());
+       //canvas.drawBitmap(blueDot, endX1 , endY1, new Paint()); // or try (endY2 + deltaY)
+      //  canvas.drawBitmap(blueDot, endX1, endY1, new Paint());
+        canvas.drawBitmap(blueDot, endX2, endY2, new Paint());
+
 
         mapView.setImageBitmap(positionBitmap);
 
@@ -133,7 +156,56 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             } else
                 drawOnMap(Float.valueOf(x_c), Float.valueOf(y_c));
         });
+        //buildGoogleApiClient();
+       // storageManager = new StorageManager(this);
+        buildfirebase();
     }
+    /**
+     * Builds {@link GoogleApiClient}, enabling automatic lifecycle management using
+     * {@link GoogleApiClient.Builder#enableAutoManage(FragmentActivity,
+     * int, GoogleApiClient.OnConnectionFailedListener)}. I.e., GoogleApiClient connects in
+     * {@link AppCompatActivity#onStart}, or if onStart() has already happened, it connects
+     * immediately, and disconnects automatically in {@link AppCompatActivity#onStop}.
+     */
+    private void buildfirebase(){
+       // FileInputStream serviceAccount = new FileInputStream("");
+
+// Initialize the app with a service account, granting admin privileges
+     /*   FirebaseOptions options = new FirebaseOptions.Builder()
+                .setApplicationId("com.apeks.atom.justamap")
+                .setDatabaseUrl("https://<databaseName>.firebaseio.com")
+                .build();
+        FirebaseApp.initializeApp(options);*/
+
+        FirebaseApp firebaseApp = FirebaseApp.initializeApp(getApplicationContext());
+        rootRef = FirebaseDatabase.getInstance(firebaseApp).getReference().child(KEY_ROOT_DIR);
+        rootRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String[] data=dataSnapshot.getValue(String.class).split(":");
+                Log.e("indu","data"+data[0]);
+                coordinates_tv.setText("X :"+Math.round(Float.valueOf(data[0]))+"\nY :"+Math.round(Float.valueOf(data[1])));
+                drawOnMap(Float.valueOf(data[0]),Float.valueOf(data[1]));
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+        });
+    }
+    private void buildGoogleApiClient() {
+        if (mGoogleApiClient != null) {
+            return;
+        }
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addApi(Nearby.MESSAGES_API)
+                .addConnectionCallbacks(this)
+                .enableAutoManage(this, this)
+                .build();
+    }
+
     public static Bitmap rotate(Bitmap b, int degrees) {
         if (degrees != 0 && b != null) {
             Matrix m = new Matrix();
@@ -161,7 +233,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         canvas.drawBitmap(mapImage, new Matrix(), null);
         canvas.drawBitmap(blueDot, left, top, new Paint());
-
+        mapView.setImageBitmap(positionBitmap);
     }
 
     protected void rotateMarker(int mCurrentDegree) {
@@ -222,5 +294,20 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         super.onPause();
         mSensorManager.unregisterListener(this, mAccelerometer);
         mSensorManager.unregisterListener(this, mMagnetometer);
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
     }
 }

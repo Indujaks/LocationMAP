@@ -22,7 +22,8 @@
         android:layout_marginStart="150dp"
         android:hint="X cord"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 
     <EditText
         android:id="@+id/textView2"
@@ -34,7 +35,22 @@
         android:layout_marginStart="200dp"
         android:hint="Z cord"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="23dp"
+        android:background="@color/colorPrimary"
+        android:gravity="right"
+        android:text="X : Y : "
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <Button
         android:id="@+id/button"
@@ -42,7 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Go" />
+        android:text="Go"
+        android:visibility="gone"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -55,6 +72,7 @@
         android:layout_gravity="bottom|end"
         android:src="@drawable/compass_icon"
         app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        android:visibility="gone"/>
 
 </RelativeLayout>
